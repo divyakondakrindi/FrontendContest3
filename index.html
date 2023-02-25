@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width:1200px;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        #customers th{
+            text-align: left;
+            padding: 10px 25px;
+            border-bottom: 1px solid  #190348;
+            border-radius: 2px;
+        }
+  th{
+    font-style: bold;
+    text-align: center;
+  }
+  td{
+    padding: 10px;
+    padding-left: 25px;
+    padding-bottom: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: medium;
+  }
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+input{
+    height: 25px;
+    width: 150px;
+    padding: 10px;
+}
+#addnew{
+    width: 200px;
+    height: 25px;
+    background-color: black;
+    color: white;
+}
+#savebutton{
+    width: 60px;
+    height: 30px;
+    background-color: black;
+    color:white;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <div>
+    <button id = "addnew">Add A New Row</button>
+</div>
+    <div>
+        
+    <table id = "customers">
+        <thead>
+            <tr class="heading">
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Student Roll</th>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Marked By</th>
+                <th>Save</th>
+            </tr>
+        </thead>
+        <tbody id = "data"></tbody>
+           
+    </table>
+</div>
+<script src="script.js">
+
+</script>
+</body>
+</html>
